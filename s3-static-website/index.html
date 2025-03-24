@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragul Muthukumar | Full-Stack Cloud Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+      :root {
+        --aws-orange: #ff9900;
+        --aws-dark: #232f3e;
+        --react-blue: #61dafb;
+        --react-native: #00d8ff;
+        --tailwind-teal: #38b2ac;
+        --terraform-purple: #7b42bc;
+        --javascript-yellow: #f7df1e;
+        --git-orange: #f05032;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+      }
+
+      .deployment-info {
+        position: relative;
+        padding-left: 3rem;
+      }
+
+      .deployment-info:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--aws-orange);
+        border-radius: 4px 0 0 4px;
+      }
+
+      .deployment-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--aws-orange);
+        font-size: 1.25rem;
+      }
+
+      .btn-glow {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: all 0.3s ease;
+      }
+
+      .btn-glow:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-glow:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0)
+        );
+        z-index: -1;
+        transition: all 0.3s ease;
+        opacity: 0;
+      }
+
+      .btn-glow:hover:after {
+        opacity: 1;
+      }
+
+      .portfolio-btn {
+        background: linear-gradient(
+          135deg,
+          var(--terraform-purple) 0%,
+          #5d2d95 100%
+        );
+      }
+
+      .github-btn {
+        background: linear-gradient(135deg, #333 0%, #111 100%);
+      }
+
+      .linkedin-btn {
+        background: linear-gradient(135deg, #0a66c2 0%, #074185 100%);
+      }
+
+      .contact-btn {
+        background: linear-gradient(
+          135deg,
+          var(--aws-orange) 0%,
+          var(--aws-dark) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+      <!-- Header Section -->
+      <header class="text-center mb-16">
+        <div
+          class="inline-block mb-6 px-4 py-2 bg-white rounded-full shadow-md"
+        >
+          <span class="font-semibold text-aws-dark">
+            <i class="fab fa-aws text-aws-orange mr-2"></i> AWS Hosted Portfolio
+          </span>
+        </div>
+
+        <div
+          class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-aws-orange to-react-blue flex items-center justify-center text-[#EDE8DC] text-5xl shadow-lg"
+        >
+          RM
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+          Ragul Muthukumar
+        </h1>
+        <p class="text-xl text-gray-600 mb-6 max-w-2xl mx-auto">
+          Bridging beautiful interfaces with robust cloud infrastructure
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+          <span class="px-4 py-2 bg-white rounded-full shadow-sm font-medium"
+            >Frontend Developer</span
+          >
+          <span class="px-4 py-2 bg-white rounded-full shadow-sm font-medium"
+            >Cloud Engineer</span
+          >
+          <span class="px-4 py-2 bg-white rounded-full shadow-sm font-medium"
+            >UI/UX Designer</span
+          >
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <!-- About Card -->
+        <div
+          class="lg:col-span-2 bg-white rounded-xl shadow-md overflow-hidden p-8"
+        >
+          <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fas fa-user-circle text-aws-orange mr-3"></i>
+            About Me
+          </h2>
+          <p class="text-gray-600 mb-6">
+            I am Ragul from Ariyalur, with a BE in Electronics and Communication
+            Engineering from University College of Engineering, Tindivanam. My
+            college project on Two-Factor Authentication in E-Voting showcased
+            my passion for security and technology. I scored 75.34% in the TCS
+            NQT Exam and attended an Embedded System Design workshop at IIT
+            Research Park, Chennai. Currently, I am diving into full-stack
+            development to expand my skills and expertise. With dedication and
+            enthusiasm, I aim to contribute to innovative and impactful tech
+            projects.
+          </p>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-700 mb-3">
+              My Technical Approach
+            </h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Build responsive UIs with React & TailwindCSS</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Develop cross-platform apps with React Native</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Design infrastructure with AWS & Terraform</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Implement CI/CD pipelines with Git workflows</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Improved Deployment Info Section -->
+          <div class="deployment-info bg-gray-50 p-4 rounded-lg mb-6">
+            <i class="deployment-icon fas fa-cloud-upload-alt"></i>
+            <p class="text-sm text-gray-600 pl-10">
+              This portfolio is hosted on
+              <strong class="text-aws-dark">AWS S3</strong> with
+              <strong class="text-aws-dark">CloudFront</strong> CDN, deployed
+              using
+              <strong class="text-terraform-purple">Terraform</strong>
+              infrastructure as code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Roles Card -->
+        <div class="space-y-6">
+          <div
+            class="role-card bg-white rounded-xl shadow-md overflow-hidden p-6 border-t-aws-orange"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 mr-4"
+              >
+                <i class="fas fa-code text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                Frontend Developer
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Crafting beautiful, responsive interfaces with React, TailwindCSS,
+              and modern JavaScript.
+            </p>
+          </div>
+
+          <div
+            class="role-card bg-white rounded-xl shadow-md overflow-hidden p-6 border-t-purple-500"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-500 mr-4"
+              >
+                <i class="fas fa-cloud text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Cloud Engineer</h3>
+            </div>
+            <p class="text-gray-600">
+              Building scalable cloud infrastructure on AWS with Terraform and
+              CI/CD pipelines.
+            </p>
+          </div>
+
+          <div
+            class="role-card bg-white rounded-xl shadow-md overflow-hidden p-6 border-t-pink-500"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-pink-50 flex items-center justify-center text-pink-500 mr-4"
+              >
+                <i class="fas fa-palette text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">UI/UX Designer</h3>
+            </div>
+            <p class="text-gray-600">
+              Creating intuitive user experiences with attention to
+              accessibility and design principles.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <!-- CTA Section -->
+      <section class="text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">
+          Let's Build Something Amazing
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+          Whether you need a beautiful frontend, cloud infrastructure, or
+          complete solution - I can help bring your vision to life.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="https://portfolio2-six-woad.vercel.app/"
+            class="btn-glow portfolio-btn px-6 py-3 text-white font-medium rounded-lg shadow-md transition-all flex items-center"
+          >
+            <i class="fas fa-laptop-code mr-2"></i> View Portfolio
+          </a>
+
+          <a
+            href="https://github.com/RAGULMUTHUKUMAR?tab=repositories"
+            class="btn-glow github-btn px-6 py-3 text-white font-medium rounded-lg shadow-md transition-all flex items-center"
+          >
+            <i class="fab fa-github mr-2"></i> GitHub Repos
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ragul9360"
+            class="btn-glow linkedin-btn px-6 py-3 text-white font-medium rounded-lg shadow-md transition-all flex items-center"
+          >
+            <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+          </a>
+
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            class="btn-glow contact-btn px-6 py-3 text-white font-medium rounded-lg shadow-md transition-all flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i> Contact Me
+          </a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
